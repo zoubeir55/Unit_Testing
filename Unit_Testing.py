@@ -3,16 +3,12 @@ from pwd import getpwuid
 from grp import getgrgid
 
 def finds_first_repeated_number(V1,V2):
-    dic={}
-    F1=-1
-    F2=-1
-    for i in range(len(V1)-1,-1,-1):
-        if V1[i] in dic.keys():
+    dic={};F1=-1
+    for i in range(len(V1)-1):dic[V1[i]]=1
+    for i in range(len(V2)-1,-1,-1):
+        if V2[i] in dic.keys():
             F1=i
-        else:
-            dic[V1[i]]=1
-    if F1==-1:print('no element found')
-    else: print(V1[F1])
+    return F1
     
     
 def find_files(path):
