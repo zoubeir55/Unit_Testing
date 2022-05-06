@@ -1,0 +1,5 @@
+To test the API between the embedded and the cloud/mobile without having the real physical device we can can 
+ 1. check through command line that all access points are OK
+ 2. check wifi/bluetooth config : ssid/Bssid ...
+ 2. check that config files are well udated 
+ 3. check driver configuration are updated or not
